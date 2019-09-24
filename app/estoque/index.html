@@ -1,0 +1,22 @@
+<h1>Estoque</h1>
+<div class="form-container">
+    <form method="post">
+        <div class="form-group">
+            <label for="EstCodigo">Código</label>
+            <input type="text" id="EstCodigo" class="form-control" ng-model="vm.Estoque.EstCodigo" required />
+        </div>
+        <div class="form-group">
+                <label for="EstReserv">Marca</label>
+                <input type="text" id="EstReserv" class="form-control" ng-model="vm.Estoque.EstReserv" required />
+        </div>
+        <div class="form-group">
+                <label for="EstDisp">Marca</label>
+                <input type="text" id="EstDisp" class="form-control" ng-model="vm.Estoque.EstDisp" required />
+        </div>
+        <div class="form-group">
+            <button class="btn btn-success" ng-click="vm.saveEstoque()">Salvar</button>
+            <button class="btn btn-danger" ng-click="vm.deleteEstoque()">Deletar</button>
+        </div>
+    </form>
+</div>
+
